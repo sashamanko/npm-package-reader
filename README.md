@@ -16,7 +16,7 @@ npm i npm-package-reader
 # Usage
 
 ## readPackage
-#### `readPackage(cwd?: string): Promise<IPackageJson>`
+#### `readPackage(cwd?: string): Promise<IPackageJson | false>`
 
 > **NOTE**: This function reads the `package.json` file asynchronously from the specified directory (default is the current working directory).
 
@@ -32,7 +32,7 @@ getPackageData();
 ```
 
 ## readPackageSync
-### `readPackageSync(cwd?: string): IPackageJson`
+### `readPackageSync(cwd?: string): IPackageJson | false`
 
 > **NOTE**: This function reads the `package.json` file synchronously from the specified directory (default is the current working directory).
 
